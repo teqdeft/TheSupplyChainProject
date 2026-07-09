@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer in Nonprofit Logistics | The Supply Chain Project</title>
+<meta name="description" content="Lend your skills to a shipment that matters. Two hours a week helps move real aid — customs, manifests, coordination. Register to volunteer with TSCP.">
+<link rel="canonical" href="https://tscp.org/volunteer">
+<link rel="icon" href="images/logo/tscp-mark-full-color.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Minimal landing header — no full nav, one CTA -->
+<header class="lp-header" data-header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="The Supply Chain Project — home">
+      <img src="images/logo/tscp-mark-full-color.svg" alt="" width="40" height="40">
+      <span class="wordmark">the supply<br>chain project</span>
+    </a>
+    <div class="nav-actions" style="margin-left:auto">
+      <a class="btn btn-primary" href="#register" data-track-click="lp_volunteer_cta">Start volunteering</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero: message-matched to the volunteer ad -->
+  <section class="hero hero--photo">
+    <div class="container">
+      <div style="max-width:640px">
+        <span class="overline on-dark">Volunteer · two hours helps</span>
+        <h1>Lend your skills to a shipment that matters.</h1>
+        <p class="lead">Volunteers are our best-engaging community. Review customs manifests, coordinate a route, translate paperwork — concrete work you can see land. Register in two minutes.</p>
+        <div class="hero-cta">
+          <a class="btn btn-action btn-lg" href="#register" data-track-click="hero_volunteer_cta">Start volunteering</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 quick reasons -->
+  <section class="section--tight section--paper">
+    <div class="container lp-benefits">
+      <div class="lp-benefit">
+        <span class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div><h3>Concrete, not vague</h3><p>You'll know exactly which shipment your two hours helped move — a route, a reference, a delivery.</p></div>
+      </div>
+      <div class="lp-benefit">
+        <span class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <div><h3>Fits your week</h3><p>Remote, flexible micro-tasks. Two hours is genuinely useful — no long-term commitment required.</p></div>
+      </div>
+      <div class="lp-benefit">
+        <span class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></span>
+        <div><h3>Real logistics experience</h3><p>Customs, manifests, coordination — build fluency in supply-chain work alongside professionals.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The single goal: registration form -->
+  <section class="section" id="register">
+    <div class="container lp-split">
+      <div>
+        <span class="overline">Register to volunteer</span>
+        <h2>Two minutes to sign up.</h2>
+        <p class="lead" style="margin-top:1rem">Tell us where you can help. A coordinator matches you to live tasks and replies within two business days.</p>
+        <!-- one trust signal -->
+        <div class="quote-card" style="margin-top:26px">
+          <blockquote style="font-size:1.15rem">&ldquo;Two hours a week reviewing customs manifests. It's the most concrete volunteering I've done.&rdquo;</blockquote>
+          <div class="quote-by"><span class="av">SK</span><div><div class="who">Sana Khan</div><div class="role">Volunteer · Logistics student</div></div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="form-card">
+          <form data-convert-form data-event="volunteer_register" data-page="/volunteer">
+            <div class="field">
+              <label for="v-name">Full name</label>
+              <input id="v-name" name="name" type="text" placeholder="e.g. Sana Khan" required>
+            </div>
+            <div class="field">
+              <label for="v-email">Email</label>
+              <input id="v-email" name="email" type="email" placeholder="you@email.com" required>
+              <span class="err-msg">Enter a valid email so a coordinator can reach you.</span>
+            </div>
+            <div class="field">
+              <label for="v-skills">Area of interest / skills</label>
+              <select id="v-skills" name="skills" required>
+                <option value="">Choose one</option>
+                <option>Customs &amp; documentation</option>
+                <option>Route coordination</option>
+                <option>Translation</option>
+                <option>Data &amp; tracking</option>
+                <option>Warehouse / on-site</option>
+                <option>Wherever I'm needed</option>
+              </select>
+              <span class="help">We match you to live tasks in that area.</span>
+            </div>
+            <button class="btn btn-action btn-block btn-lg" type="submit">Start volunteering</button>
+          </form>
+          <div class="form-success">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+            <h3>You're on the roster.</h3>
+            <p style="color:var(--slate)">A coordinator will match you to live tasks and email you within two business days.</p>
+          </div>
+          <p class="form-note">No spam · unsubscribe anytime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="lp-footer">
+  <div class="container">
+    The Supply Chain Project · registered 501(c)(3) · &copy; <span data-year>2026</span> ·
+    <a href="index.html">Home</a> · <a href="#">Privacy</a> · <a href="#">Terms</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

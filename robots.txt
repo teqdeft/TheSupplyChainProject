@@ -1,0 +1,6 @@
+# The Supply Chain Project — robots.txt
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://tscp.org/sitemap.xml

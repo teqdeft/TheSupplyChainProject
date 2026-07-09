@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Tell Us What You Need to Move | TSCP</title>
+<meta name="description" content="Get in touch with The Supply Chain Project. Tell us what you need to move, offer capacity, or ask a question — a coordinator replies within two business days.">
+<link rel="canonical" href="https://tscp.org/contact">
+<link rel="icon" href="images/logo/tscp-mark-full-color.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="The Supply Chain Project — home">
+      <img src="images/logo/tscp-mark-full-color.svg" alt="" width="44" height="44">
+      <span class="wordmark">the supply<br>chain project</span>
+    </a>
+    <nav class="nav-links" data-nav-links aria-label="Primary">
+      <a href="about.html">About us</a>
+      <a href="what-we-do.html">What we do</a>
+      <a href="index.html#router">Get involved</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="signin" href="#">Sign in</a>
+      <a class="btn btn-primary" href="nonprofit.html">Register</a>
+      <a class="btn btn-action" href="donate.html">Donate</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop" data-nav-backdrop></div>
+
+<main id="main">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></nav>
+  </div>
+
+  <section class="section" style="padding-top:clamp(20px,3vw,32px)">
+    <div class="container lp-split">
+      <div>
+        <span class="overline">Contact</span>
+        <h1 style="margin:.4rem 0 1rem">Tell us what you need to move.</h1>
+        <p class="lead">Whether you're a nonprofit with a shipment, a partner with capacity, or just have a question — send a note and a coordinator replies within two business days.</p>
+
+        <div class="grid" style="gap:14px;margin-top:28px">
+          <div class="need-card">
+            <span class="route-chip data">General</span>
+            <h3 style="font-size:1.05rem">hello@tscp.org</h3>
+            <p style="color:var(--slate);font-size:.92rem">Questions, media, and everything else.</p>
+          </div>
+          <div class="need-card">
+            <span class="route-chip data">Partnerships</span>
+            <h3 style="font-size:1.05rem">partners@tscp.org</h3>
+            <p style="color:var(--slate);font-size:.92rem">Carriers, corporations, and technology providers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="form-card">
+          <form data-convert-form data-event="contact_submit" data-page="/contact">
+            <div class="field">
+              <label for="c-name">Your name</label>
+              <input id="c-name" name="name" type="text" placeholder="e.g. Amara Diallo" required>
+            </div>
+            <div class="field">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" placeholder="you@organization.org" required>
+              <span class="err-msg">Enter a valid email so we can reply.</span>
+            </div>
+            <div class="field">
+              <label for="c-role">I am a…</label>
+              <select id="c-role" name="role" required>
+                <option value="">Choose one</option>
+                <option>Nonprofit</option>
+                <option>Partner (carrier / corporate / tech)</option>
+                <option>Volunteer</option>
+                <option>Donor</option>
+                <option>Press / other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="c-msg">Message</label>
+              <textarea id="c-msg" name="message" placeholder="Tell us what you need to move, or how you can help." required></textarea>
+            </div>
+            <button class="btn btn-primary btn-block btn-lg" type="submit">Send message</button>
+          </form>
+          <div class="form-success">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+            <h3>Message sent.</h3>
+            <p style="color:var(--slate)">Thanks — a coordinator will reply within two business days.</p>
+          </div>
+          <p class="form-note">We reply within 2 business days</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="wordmark"><img src="images/logo/tscp-mark-white.svg" alt="">the supply chain project</div>
+        <p>The nonprofit logistics backbone. We match need with capacity and handle the hard middle: shipping, customs, warehousing, last-mile.</p>
+      </div>
+      <div class="footer-col"><h4>Get involved</h4><a href="nonprofit.html">Register a nonprofit</a><a href="partner.html">Offer capacity</a><a href="volunteer.html">Volunteer</a><a href="donate.html">Donate</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About us</a><a href="what-we-do.html">What we do</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Platform</h4><a href="partner.html">Marketplace</a><a href="about.html">Impact</a><a href="resources.html">Blog &amp; insights</a><a href="resources.html">FAQ</a></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="trust-line">The Supply Chain Project is a registered 501(c)(3). Donations are tax-deductible. &copy; <span data-year>2026</span> TSCP.</div>
+      <div class="legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="404.html">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* ============================================================
+   THE SUPPLY CHAIN PROJECT — responsive.css
+   Mobile-first floor: 375px. Tap targets >= 44px. Donate stays
+   visible at all breakpoints (grant requirement).
+   ============================================================ */
+
+/* ---------- <= 1024px : tablet / small laptop ---------- */
+@media (max-width:1024px){
+  .router-cards{grid-template-columns:repeat(2,1fr)}
+  .g-4{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr);gap:28px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:28px}
+  .footer-brand{grid-column:1 / -1}
+  .lp-benefits{grid-template-columns:1fr;gap:16px}
+}
+
+/* ---------- <= 900px : collapse hero + splits ---------- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-visual{order:-1}
+  .impact-feature{grid-template-columns:1fr;gap:28px}
+  .lp-split{grid-template-columns:1fr;gap:28px}
+  .cta-band{grid-template-columns:1fr;text-align:left}
+
+  /* mobile navigation */
+  .menu-toggle{display:inline-flex}
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(84vw,340px);
+    flex-direction:column;align-items:stretch;gap:4px;background:var(--paper);
+    padding:88px 22px 32px;box-shadow:-20px 0 60px -20px rgba(23,50,63,.5);
+    transform:translateX(100%);transition:transform .32s var(--ease);
+    z-index:120;overflow-y:auto}
+  .nav-links.open{transform:translateX(0)}
+  .nav-links a{padding:.9em 1em;font-size:1.05rem;border-bottom:1px solid var(--mist)}
+  .nav-backdrop{position:fixed;inset:0;background:rgba(16,34,43,.45);opacity:0;
+    visibility:hidden;transition:.3s;z-index:110}
+  .nav-backdrop.open{opacity:1;visibility:visible}
+  /* keep Register + Donate always visible in the bar */
+  .nav-actions .signin{display:none}
+  body.menu-open{overflow:hidden}
+}
+
+/* ---------- <= 720px : single column grids ---------- */
+@media (max-width:720px){
+  .g-2,.g-3,.g-4{grid-template-columns:1fr}
+  .router-cards{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .lp-benefits{grid-template-columns:1fr}
+  .trust-strip .container{gap:14px 24px}
+  .trust-divider{display:none}
+  .amount-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ---------- <= 560px : phone ---------- */
+@media (max-width:560px){
+  :root{--gutter:18px}
+  .brand .wordmark{font-size:.98rem}
+  .brand img{width:38px;height:38px}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  .stats{grid-template-columns:1fr 1fr;gap:20px}
+  .cta-band .cta-actions{flex-direction:column}
+  .cta-band .cta-actions .btn{width:100%}
+  .newsletter form{flex-direction:column}
+  .newsletter input{width:100%}
+  .quote-card blockquote{font-size:1.15rem}
+}
+
+/* ---------- <= 400px : smallest supported (375px) ---------- */
+@media (max-width:400px){
+  .brand .wordmark{display:none}      /* mark-only lockup below 200px width, per guidelines */
+  .stats{grid-template-columns:1fr}
+  h1{font-size:2rem}
+}
+
+/* landscape phones: keep menu scrollable */
+@media (max-height:520px) and (max-width:900px){
+  .nav-links{padding-top:72px}
+}
